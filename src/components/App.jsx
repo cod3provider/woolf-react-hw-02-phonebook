@@ -8,14 +8,16 @@ class App extends Component {
   state = {
     contacts: [],
     name: '',
+    number: '',
   };
 
-  createContact = name => {
+  createContact = ({ name, number }) => {
     this.setState(prevState => {
       const { contacts } = prevState;
       const newContact = {
         id: nanoid(),
         name,
+        number,
       };
 
       return { contacts: [newContact, ...contacts] };
