@@ -1,10 +1,16 @@
+import s from './ContactList.module.css';
+
+import {ReactComponent as Icon} from '../../icons/trash.svg';
+
 const ContactsList = ({ contacts, onDelete }) => {
   return (
-    <ul>
+    <ul className={s.list}>
       {contacts.map(({ id, name, number }) =>
-        <li key={id}>
+        <li className={s.item} key={id}>
           {name}: {number}
-          <button onClick={() => onDelete(id)}>Delete</button>
+          <button className={s.button} onClick={() => onDelete(id)}>
+            <Icon className={s.icon} />
+          </button>
         </li>,
       )}
     </ul>
