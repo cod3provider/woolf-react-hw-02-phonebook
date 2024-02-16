@@ -9,6 +9,7 @@ class App extends Component {
     contacts: [],
     name: '',
     number: '',
+    filter: '',
   };
 
   createContact = ({ name, number }) => {
@@ -24,14 +25,25 @@ class App extends Component {
     });
   };
 
+  handleFilterChange = e => {
+    this.setState({ filter: e.target.value });
+  }
+
+  getFilteredContacts = () => {
+    const { contacts, name, filter } = this.state;
+    return contacts.filter(contact => contact.name.toLowerCase().includes(filter.toLowerCase()));
+  }
+
   render() {
     console.log(this.state);
-    const { createContact } = this;
+    const { createContact, handleFilterChange } = this;
     const { contacts } = this.state;
+    const filteredContacts = this.getFilteredContacts();
     return (
       <>
         <ContactsForm onSubmit={createContact} />
-        <ContactsList contacts={contacts} />
+        <ContactsList contacts={filteredContacts} />
+        <input type='text' value={this.state.filter} onChange={handleFilterChange} placeholder='Search...' />
       </>
     );
   }
