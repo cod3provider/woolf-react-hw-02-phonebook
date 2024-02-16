@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/woolf-react-hw-02-feedback/static/css/main.d01d9a67.css",
-    "main.js": "/woolf-react-hw-02-feedback/static/js/main.522b6c8e.js",
-    "static/media/trash.svg": "/woolf-react-hw-02-feedback/static/media/trash.6a4e3712479a58bb7fa0638ad3908c41.svg",
-    "index.html": "/woolf-react-hw-02-feedback/index.html",
-    "main.d01d9a67.css.map": "/woolf-react-hw-02-feedback/static/css/main.d01d9a67.css.map",
-    "main.522b6c8e.js.map": "/woolf-react-hw-02-feedback/static/js/main.522b6c8e.js.map"
+    "main.css": "/woolf-react-hw-02-phonebook/static/css/main.d01d9a67.css",
+    "main.js": "/woolf-react-hw-02-phonebook/static/js/main.32c7a2ef.js",
+    "static/media/trash.svg": "/woolf-react-hw-02-phonebook/static/media/trash.6a4e3712479a58bb7fa0638ad3908c41.svg",
+    "index.html": "/woolf-react-hw-02-phonebook/index.html",
+    "main.d01d9a67.css.map": "/woolf-react-hw-02-phonebook/static/css/main.d01d9a67.css.map",
+    "main.32c7a2ef.js.map": "/woolf-react-hw-02-phonebook/static/js/main.32c7a2ef.js.map"
   },
   "entrypoints": [
     "static/css/main.d01d9a67.css",
-    "static/js/main.522b6c8e.js"
+    "static/js/main.32c7a2ef.js"
   ]
 }
