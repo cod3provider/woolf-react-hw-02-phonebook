@@ -1,4 +1,4 @@
-const Filter = ({value, handleChange}) => {
+const Filter = ({ value, handleChange }) => {
   return (
     <>
       <label>
