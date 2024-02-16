@@ -15,8 +15,8 @@ class App extends Component {
       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
     ],
     filter: '',
-    name: '',
-    number: '',
+    // name: '',
+    // number: '',
   };
 
   createContact = ({ name, number }) => {
@@ -27,9 +27,7 @@ class App extends Component {
       return false;
     }
 
-    this.setState(prevState => {
-      const { contacts } = prevState;
-
+    this.setState(({ contacts }) => {
       const newContact = {
         id: nanoid(),
         name,
